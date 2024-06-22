@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Clone</title>
+
+    <link rel="stylesheet" href="./style/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <header>
+        <div id ="header">
+            <span id ="navigation1">
+                <ul>
+                    <li>Seller Centre</li>
+                    <li>Start Sellomg</li>
+                    <li>Download</li>
+                    <li>Follow on us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>                
+                    </li>
+                </ul>
+                <ul>
+                    <li>Notifications</li>
+                    <li>Help</li>
+                    <li>English</li>
+                    <li>Username</li>
+                </ul>
+            </span>
+
+            <span id = "navigation2">
+                <img id ="shopeeLogo"src="./img/Shopee-Logo.png" alt="Shopee">
+                <span> 
+                    <input type="search" name="" id="searchInput" placeholder="Mission of Fashion Details">
+                    <button type="button" id ="searchBttn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
+                    </button>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                  </svg>
+            </span>
+            <span id ="navigation3"> 
+                <li>Trolley Cat</li>
+                <li>Tools Set for Motorcycle</li>
+                <li>Trolley Cart Heavy Duty</li>
+                <li>Power Bank</li>
+                <li>Shafety Shoes for Men</li>
+                <li>Steel Toe High Cut Original</li>
+                <li>Elderly Chair</li>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <section id="productContainer">
+            <div>
+                <span id="imageContainer">
+                    <img id="productImage" src="" alt="">
+                </span>
+                <span id="detailsContainer">
+                    
+                    <h6 id ="productName"></h6>
+                    <span id="details1">
+                        <h6 id="ratings">
+                        </h6>
+                        <h6>14.1k Ratings</h6>
+                        <h6>234 Sold</h6>
+                        <h6>Report</h6>
+                    </span>
+
+                    <span id ='details2'>
+                        <h6 id="itemPrice"></h6>
+                        <h6>
+                            <img id ="lower" src="./img/lower.png" alt="">
+                            Lower Price Guaranteed
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                            </svg>
+                        </h6>
+                    </span>
+
+                    <span id ='details3'>
+                        <h6>Return</h6>
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-reply-fill" viewBox="0 0 16 16">
+                                <path d="M5.921 11.9 1.353 8.62a.72.72 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+                            </svg>
+                            Free & Easy Returns </h6>
+                        <h6>
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                            </svg>
+                        </h6>
+                    </span>
+
+                    <span id ='details4'>
+                        <h6>Shipping</h6>
+                    
+                        <h6 id="shippingDisc">
+                                <img id ="freeShipping" src="./img/free-shipping.png" alt="">
+                                Shipping Discount
+                                <br>
+                                Shipping discount for orders over ₱399
+    
+                        </h6>
+                    </span>
+
+
+                    <span id ='details5'>
+                        <h6>Quantity</h6>
+                        <span>
+                            <input type="number">
+                            <h6 id ="stocks"></h6>
+                        </span>
+                    </span>
+
+                    <span id ="action">
+                        <button id ="addCart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                            Add to Cart
+                        </button>
+                        
+                        <button id ="buyNow">
+                            Buy Now
+                        </button>
+                    </span>
+                </span>
+            </div>
+
+
+        </section>
+
+        <section id ="sellerContainer">
+
+            <div>
+                <div id="sellerImage"></div>
+                <span>
+                    <h6 id ="sellerName">Essence  Product</h6>
+                    <h6 id ="sellerStatus">Active 4 Hours Ago</h6>
+                    <span id ="sellerBttns">
+                        <button>Chat Now</button>
+                        <button>View Shop</button>
+                    </span>
+                </span>
+            </div>
+
+            <div>
+                <span>
+                    <span class="sellerData">
+                        <h6>Ratings</h6>
+                        <h6>1.7k</h6>
+                    </span>
+                    <span class="sellerData">
+                        <h6>Response Rate</h6>
+                        <h6>57%</h6>
+                    </span>
+                    <span class="sellerData">
+                        <h6>Joined</h6>
+                        <h6>10 months ago</h6>
+                    </span>
+                </span>
+                <span>
+                    <span class="sellerData">
+                        <h6>Products</h6>
+                        <h6>45</h6>
+                    </span>
+                    <span class="sellerData">
+                        <h6>Response Time</h6>
+                        <h6>within minutes</h6>
+                    </span>
+                    <span class="sellerData">
+                        <h6>Follower</h6>
+                        <h6>608</h6>
+                    </span>
+                </span>
+            </div>
+        </section>
+        
+        <section id ="specsContainter">
+            <h6>Product Specifications</h6>
+
+            <span id="categoryContainer">
+                <h6>Category</h6>
+                <h6 id = "itemCategory"></h6>
+            </span>
+
+            <span id ="stockContainer">
+                <h6>Stock</h6>
+                <h6 id ="stocks2">Category</h6>
+            </span>
+
+            <span id="shipsContainer">
+                <h6>Ships From</h6>
+                <h6>Antipolo City, Rizal</h6>
+            </span>
+
+            <h6 id ="producDesc">Product Descriptions</h6>
+            <h6 id= 'producDesc2'></h6>
+        </section>
+
+        <section id ="ratingsContainer">
+            <h6>Product Ratings</h6>
+
+            <div class ="customerContainer" id ="customerContainer">
+                <span class ="customerProfile" id = "customerProfile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                </span>
+                <span class ="customerInfo">
+                    <h6 class ="customerName">Customer Name</h6>
+                    <span  class ="customerRating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>  
+                        4.5
+                    </span>
+                    <h6 class ="commentDate">2023-10-30 17:58</h6>
+                    <h6 class ="customerComment">Comment</h6>
+
+                </span>
+            </div>
+
+        </section>
+    </main>
+    
+
+
+    <script src="./js/product.js" ></script>
+    <script>
+        var icon = document.getElementById('shopeeLogo');
+        icon.addEventListener('click', ()=>{
+            window.location.href = 'index.html';
+        })
+    </script>
+
+</body>
+</html>
